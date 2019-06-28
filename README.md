@@ -1,6 +1,8 @@
 # svg_colour_selection_palette
 A simple colour selection tool that uses SVG.
 
+See the [example demo](https://serialc.github.io/svg_colour_selection_palette/example.html)
+
 ## How to embed
 See example.html.
 
