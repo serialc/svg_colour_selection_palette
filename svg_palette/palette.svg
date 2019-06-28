@@ -1,0 +1,29 @@
+<svg version="1.1"
+    width="220"
+    height="200"
+    baseProfile="full"
+    xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient id="bw-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+   <stop offset="0%" style="stop-color:rgb(255,255,255); stop-opacity:1"/>
+   <stop offset="50%" style="stop-color:rgb(255,255,255); stop-opacity:0"/>
+   <stop offset="100%" style="stop-color:rgb(0,0,0); stop-opacity:1"/>
+  </linearGradient>
+  <linearGradient id="black-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+   <stop offset="0%" style="stop-color:rgb(0,0,0)"/>
+   <stop offset="100%" style="stop-color:rgb(255,255,255)"/>
+  </linearGradient>
+  <linearGradient id="rainbow-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+   <stop offset="0%" style="stop-color:rgb(255,0,0); stop-opacity:1"/>
+   <stop offset="17%" style="stop-color:rgb(255,255,0); stop-opacity:1"/>
+   <stop offset="33%" style="stop-color:rgb(0,255,0); stop-opacity:1"/>
+   <stop offset="50%" style="stop-color:rgb(0,255,255); stop-opacity:1"/>
+   <stop offset="66%" style="stop-color:rgb(0,0,255); stop-opacity:1"/>
+   <stop offset="83%" style="stop-color:rgb(255,0,255); stop-opacity:1"/>
+   <stop offset="100%" style="stop-color:rgb(255,0,0); stop-opacity:1"/>
+  </linearGradient>
+ </defs>
+ <rect x='0' y='0' width='200' height='200' style='fill:url(#rainbow-gradient)' />
+ <rect x='0' y='0' width='200' height='200' style='fill:url(#bw-gradient)' />
+ <rect x='200' y='0' width='21' height='200' style='fill:url(#black-gradient)' />
+</svg>

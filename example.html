@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- Add this for the JS -->
+        <script src="svg_palette/pal.js"></script>
+        <!-- Add this for the (minimal) CSS -->
+        <link rel='stylesheet' type='text/css' href='svg_palette/pal.css'>
+    </head>
+    <body>
+
+    <script type='text/javascript'>
+        // Example function that is called when a palette colour is clicked on
+        // You determine (lower down in this example) which function will be called when a value is passed
+        function changeBG(colour) {
+            document.body.style.background = '#' + colour;
+        }
+    </script>
+
+    <div>
+<!-- Tell the svg_palette what function to call when it retrieves a colour code.  -->
+<!-- Use the palette icon, or a button to bring up the SVG palette -->
+<!-- The second parameter determines whether the colour is sent back when mousing over the palette (true) or just when clicked upon (false) -->
+        <p>Choose colour: <img onclick='javascript:PL.openPl(changeBG, true)' src='svg_palette/palicon.png'></p>
+     
+        <!-- Place the pallete wherever you wish, the CSS will hide it until needed -->
+        <div id='svgpal'>
+            <img src="svg_palette/palette.svg" alt="SVG Palette" width="220px" height="200px"/>
+        </div>
+
+    </div>
+    </body>
+</html>
